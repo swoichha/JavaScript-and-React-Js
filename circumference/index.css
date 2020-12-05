@@ -1,0 +1,25 @@
+body{
+    background-color: #0c121f;
+    color: white;
+    text-align: center;
+    display: inline;
+}
+#getRadius {
+    font-size: 30px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+#circumferenceBtn{
+    color: white;
+    text-align: center;
+    font-family: Orbitron;
+    border-radius: 8px;
+    background-color: #46b36a;
+    cursor: pointer;
+}
+#setRadius{
+    font-size: 30px;
+    padding-right: 100px;
+}
+
