@@ -1,18 +1,7 @@
-const cost_input = document.querySelector('.cost');
-const tip_value = document.querySelector('.tipValue');
+function calculateTipValue() {
+    let total_bill = Number(document.getElementById('total_bill').value);
+    let tip_percent = Number(document.getElementById('tip_percent').value);
 
-const tip_btn = document.querySelector('#tip-btn');
-console.log(tip_btn, cost_input, tip_value)
-tip_btn.addEventListener('click', calc_tip);
-
-function calc_tip () {
-    let cost = Number(cost_input.value);
-    let tip = Number(tip_value.value) / 100;
-    let total_tip = (cost * tip);
-
-    let tip_el = document.querySelector('.tip-wrap .tip');
-    tip_el.innerText = 'Rs' + total_tip.toFixed(2);
+    console.log(total_bill, tip_percent)
+    document.getElementById('totalTip').innerHTML = 'The total tip that you have to pay is: ' + total_bill * (tip_percent / 100);
 }
-
-
-
